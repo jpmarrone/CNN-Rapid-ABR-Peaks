@@ -1,0 +1,2 @@
+run_id,status,strat,remove_frac,repeat_id,sub_seed,cv_seed,train_seed,n_total,n_kept,n_removed,runtime_sec
+freq_percent_rm0.45_r09,completed,freq_percent,0.45,9,619314,845244,956249,2863,1575,1288,352.7961645000032

@@ -1,0 +1,6 @@
+run_id,strat,remove_frac,keep_frac,repeat_id,target,initial_mae_ms,adjusted_mae_ms,adjusted_accuracy_pct
+freq_percent_rm0.4_r03,freq_percent,0.4,0.6,3,all targets,0.06217309007566939,0.009477060034542644,98.80675203725262
+freq_percent_rm0.4_r03,freq_percent,0.4,0.6,3,target1,0.06039092595596608,0.009488980864774774,98.89406286379511
+freq_percent_rm0.4_r03,freq_percent,0.4,0.6,3,target2,0.03740756526842116,0.007343231422991533,99.0686845168801
+freq_percent_rm0.4_r03,freq_percent,0.4,0.6,3,target3,0.03335448298949726,0.004124607260316673,99.47613504074505
+freq_percent_rm0.4_r03,freq_percent,0.4,0.6,3,target4,0.11753938608879305,0.0169514205900876,97.78812572759023
