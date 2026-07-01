@@ -49,8 +49,8 @@ stim_info = {"click": {"mat_key": "SAF_clickABR_unfiltered", "trunc": slice(90, 
              "10k": {"mat_key": "SAF_10kABR_unfiltered", "trunc": slice(101, 352), "t": np.linspace(4.1369705906, 14.3769968051, 251)},
              "16k": {"mat_key": "SAF_16kABR_unfiltered", "trunc": slice(98, 349),"t": np.linspace(4.0140902761, 14.2541164905, 251)}}
 
-plot_names = ["W1 P", "W1 T", "W3 P", "W3 T"]
-marker_colors = ["red", "black", "red", "black"]
+plot_names = ["W1 P", "W1 T", "W4 P", "W4 T", "W5 P", "W5 T"]
+marker_colors = ["red", "black", "red", "black", "red", "black"]
 label_shift = 0.2
 
 plt.rcParams.update({"font.family": "Arial", "font.size": 16})

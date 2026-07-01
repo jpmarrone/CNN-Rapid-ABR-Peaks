@@ -9,7 +9,7 @@ from cycler import cycler
 # %% 
 
 script_folder = Path(__file__).resolve().parent
-base_folder = script_folder.parents[1]
+base_folder = script_folder.parent
 
 save_root = base_folder/"outputs"/"dualChannel_data_forPaper"/"dataset_size_ablation_ch1"
 

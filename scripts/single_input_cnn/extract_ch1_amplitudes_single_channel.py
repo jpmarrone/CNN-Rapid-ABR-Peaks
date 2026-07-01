@@ -180,19 +180,16 @@ def adjust_prediction(signal, pred_index, mode, window, lower_bound, upper_bound
         return pred_index
     return min(candidates, key=lambda i: abs(i - pred_index))
 
-
 def get_recordings(stim, d):
     records = []
 
     for day, day_data in d.items():
         for level, level_data in day_data.items():
-            ch1 = level_data["Ch1"]
-            ch2 = level_data["Ch2"]
-
-            for rat, sig1 in ch1.items():
+            for rat, sig in level_data.items():
                 records.append({"stim": stim, "rat": rat, "day": day, "level": level, "id": f"{stim}:{rat}_{day}_{level}",
-                                "ch1": np.asarray(sig1, dtype=float).ravel(), "ch2": np.asarray(ch2[rat], dtype=float).ravel()})
+                                "signal": np.asarray(sig, dtype=float).ravel()})
     return records
+
 
 
 #%% run the actual extraction
@@ -269,7 +266,7 @@ for stim, info in stim_info.items():
                 continue
         
         cnn_input = x_cnn[i]
-        cnn_input = torch.tensor(cnn_input, dtype=torch.float32).unsqueeze(0).to(device)
+        cnn_input = torch.tensor(cnn_input, dtype=torch.float32).unsqueeze(0).unsqueeze(0).to(device)
         with torch.no_grad():
             out = model(cnn_input)
         

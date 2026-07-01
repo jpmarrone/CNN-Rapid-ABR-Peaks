@@ -18,9 +18,9 @@ plt.rcParams.update({"font.family": "Arial", "font.size": 16})
 # %%
 
 script_folder = os.path.dirname(os.path.abspath(__file__))
-base_folder = os.path.dirname(os.path.dirname(script_folder))
+base_folder = os.path.dirname(script_folder)
 
-outputs_folder = os.path.join(base_folder, "outputs")
+outputs_folder = os.path.join(base_folder, "outputs", "dualChannel_data_forPaper")
 
 results_name = "ch2_10runs_20260623_160201"
 results_folder = os.path.join(outputs_folder, results_name)
