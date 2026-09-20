@@ -364,12 +364,12 @@ for i in range(k):
                 if is_corr:
                     correct_targets += 1
                     
-                    #stimulus specific accuracy
-                    if st in stimuli:
-                        global_stim_total[st] += 1
-                        if is_corr:
-                            global_stim_correct[st] += 1
-                                    
+                #stimulus specific accuracy
+                if st in stimuli:
+                    global_stim_total[st] += 1
+                    if is_corr:
+                        global_stim_correct[st] += 1
+                                
             wrong = np.where(adjusted != target_idx)[0].tolist()
             if wrong:
                 plt.figure(figsize=(6, 5))
